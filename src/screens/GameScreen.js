@@ -3,8 +3,8 @@ import { Game } from 'un-cavaliere-e-mezzo-library'
 
 const GameScreen = () => {
   return (
-    <div>
-      <Game/>
+    <div className='container'>
+        <Game/>
     </div>
   )
 }

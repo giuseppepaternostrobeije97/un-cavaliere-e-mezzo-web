@@ -1,9 +1,12 @@
-import React from 'react'
+import React from "react";
+import { Arena } from "un-cavaliere-e-mezzo-library";
 
 const ArenaScreen = () => {
   return (
-    <div>ArenaScreen</div>
-  )
-}
+    <div className="container">
+      <Arena />
+    </div>
+  );
+};
 
-export default ArenaScreen
+export default ArenaScreen;

@@ -3,8 +3,7 @@ import {Lobby} from 'un-cavaliere-e-mezzo-library'
 
 const LobbyScreen = () => {
   return (
-    <div>
-      <h2>lobby</h2>
+    <div className='container'>
         <Lobby/>
     </div>
   )
