@@ -1,27 +1,23 @@
-import React from 'react'
-import { Login } from 'un-cavaliere-e-mezzo-library'
-import { useNavigate } from 'react-router-dom/dist'
+import React from "react";
+import { Login } from "un-cavaliere-e-mezzo-library";
+import { useNavigate } from "react-router-dom/dist";
 
 const LoginScreen = () => {
-
-  const navigate = useNavigate()
+  const navigate = useNavigate();
 
   const goToLobby = () => {
-    navigate('lobby')
-  }
+    navigate("/lobby");
+  };
 
   const goToRegister = () => {
-    navigate('register')
-  }
+    navigate("/register");
+  };
 
   return (
-    <div className='container'>
-        <Login
-        callbackLogin={goToLobby}
-        callbackRegister={goToRegister}
-        />
+    <div className="container">
+      <Login callbackLogin={goToLobby} callbackRegister={goToRegister} />
     </div>
-  )
-}
+  );
+};
 
-export default LoginScreen
+export default LoginScreen;

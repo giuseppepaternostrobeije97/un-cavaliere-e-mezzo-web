@@ -7,7 +7,7 @@ const LobbyScreen = () => {
   const navigate = useNavigate();
 
   function handleLobby(lobby) {
-    navigate("arena", { state: lobby });
+    navigate("/arena", { state: lobby });
   }
 
   return (
