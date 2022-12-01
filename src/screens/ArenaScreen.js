@@ -7,13 +7,8 @@ const ArenaScreen = () => {
   const location = useLocation();
   const navigate = useNavigate();
 
-  function handleGame(event) {
-    navigate("/game", {
-      state: {
-        match: event[0],
-        webSocket: event[1],
-      },
-    });
+  function handleGame(match) {
+    navigate("/game", { state: match });
   }
 
   function exitLobby() {

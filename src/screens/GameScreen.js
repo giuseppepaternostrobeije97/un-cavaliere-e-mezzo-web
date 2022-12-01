@@ -6,7 +6,7 @@ const GameScreen = () => {
   const location = useLocation();
   return (
     <div className="container">
-      <Game match={location.state.match} webSocket={location.state.webSocket} />
+      <Game match={location.state} />
     </div>
   );
 };
