@@ -10,9 +10,13 @@ const LobbyScreen = () => {
     navigate("/arena", { state: lobby });
   }
 
+  function handleLobby() {
+    navigate("/ranking");
+  }
+
   return (
     <div className="container">
-      <Lobby goLobby={handleLobby} />
+      <Lobby goLobby={handleLobby} callbackRankingNav={handleRanking}/>
     </div>
   );
 };
