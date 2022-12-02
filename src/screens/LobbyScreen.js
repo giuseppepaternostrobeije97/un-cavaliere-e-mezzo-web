@@ -10,7 +10,7 @@ const LobbyScreen = () => {
     navigate("/arena", { state: lobby });
   }
 
-  function handleLobby() {
+  function handleRanking() {
     navigate("/ranking");
   }
 
